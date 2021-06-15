@@ -2,41 +2,116 @@ body {
   font-size: .75em;
   font-family: "Kumbh Sans", sans-serif;
   background: linear-gradient(#AF67E9, #6565E7);
-  padding: 25px 15px 100px 15px;
+  padding: 35px 10px 100px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #1D1E35;
+  margin: 0;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
 }
 
 .mobile-img-div {
   display: flex;
   justify-content: center;
-  width: 75%;
+  align-items: center;
   z-index: 2;
   position: absolute;
   margin-right: calc(10%);
 }
 
 .mobile-img {
-  width: 100%;
+  size: 100px;
 
 }
 
 .card {
   background: #FFF;
-  margin-top: 100px;
-  padding: 100px 20px 50px 20px;
+  margin-top: 110px;
+  padding: 100px 10px 50px 10px;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   position: relative;
   border-radius: 25px;
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 80%;
+}
+
+.faq-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.question-section {
+  width: 90%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+  padding: 25px 0 0 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.125em;
+  color: #4A4B5E;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap;
+  padding: 10px 0;
+}
+
+.question i {
+  color: #F47C57;
+  transform: rotate(180deg);
+}
+
+.question-and-answer {
+  border-bottom: 1px solid #E7E7E9;
+}
+
+p {
+  color: #787887;
+  font-size: 1.125em;
+  margin: 0;
+  padding-bottom: 15px;
+  line-height: 1.35em;
+  width: 90%;
+}
+
+/*==== JAVASCRIPT ACTIVE STYLES ====== */
+
+h2 .active {
+  font-weight: 700;
+  color: #1D1E35;
+}
+
+.question i .active {
+  transform: rotate(180deg);
+}
+
+.hide {
+  display: none;
 }
