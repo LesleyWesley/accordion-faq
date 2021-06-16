@@ -1,29 +1,23 @@
-// Selects the orange arrow
-const arrow = document.querySelector(".question i");
+const qAndA = document.querySelectorAll(".question-and-answer");
 
+for (eachQAndA of qAndA) {
+  const questionDiv = eachQAndA.querySelector(".question");
+  const question = eachQAndA.querySelector("h2");
+  const arrow = eachQAndA.querySelector(".question i");
+  const answer = eachQAndA.querySelector(".answer");
+  console.log(arrow);
 
-
-//Selects the question div
-
-const questionDiv = document.querySelectorAll(".question");
-
-//Selects answer div
-
-const answer = document.querySelector (".answer");
-
-//====================================================
-
-// Adds click event for questions
-
-questionDiv.forEach(question) => {
-  question.onclick = function () {
-    this.classList.toggle("hide");
-    let content = this.nextElementSibling;
-
-    if (content.classList.includes("hide")) {
-      content.classList.remove("hide");
+  questionDiv.addEventListener("click", function () {
+    if (answer.classList.contains("hide")) {
+      answer.classList.remove("hide");
+      question.style.fontWeight = "700";
+      question.style.color = "#1D1E35";
+      arrow.classList.add("active");
     } else {
-      content.classList.add("hide");
+      answer.classList.add("hide");
+      question.style.fontWeight = "400";
+      question.style.color = "#4A4B5E";
+      arrow.style.transform = "rotate(180deg)";
     }
-  }
+  });
 };
