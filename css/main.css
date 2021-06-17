@@ -8,6 +8,7 @@ body {
   justify-content: center;
   color: #1D1E35;
   margin: 0;
+  height: 100%;
 }
 
 main {
@@ -23,12 +24,15 @@ main {
   align-items: center;
   z-index: 2;
   position: absolute;
-  margin-right: calc(10%);
+  margin-right: calc(5%);
 }
 
 .mobile-img {
   size: 100px;
+}
 
+.box {
+  display: none;
 }
 
 .card {
@@ -36,6 +40,7 @@ main {
   margin-top: 110px;
   padding: 100px 10px 50px 10px;
   width: 85%;
+  max-width: 330px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +71,7 @@ h1 {
   text-align: center;
   padding: 25px 0 0 0;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 h2 {
@@ -74,12 +80,19 @@ h2 {
   color: #4A4B5E;
 }
 
+h2:hover {
+  color: #F47C57;
+  cursor: pointer;
+}
+
+
 .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: nowrap;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .question i {
@@ -102,15 +115,58 @@ p {
 
 /*==== JAVASCRIPT ACTIVE STYLES ====== */
 
-h2 .active {
-  font-weight: 700;
-  color: #1D1E35;
-}
-
-.question i .active {
-  transform: rotate(180deg);
-}
 
 .hide {
   display: none;
+}
+
+/*===============================================
+
+    TABLET STYLES
+
+=================================================*/
+
+@media (min-width: 1024px) {
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-image-div {
+    background-image: url("../images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: -70px;
+    background-position-y: 40px;
+    background-size: 395px;
+    height: 350px;
+  }
+
+  .card {
+    width: 65%;
+    max-width: 1000px;
+    justify-content: space-between;
+    padding: 25px 40px 50px 0;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position:left;
+    background-position-x: -320px;
+    background-size: 92%;
+  }
+
+  .desktop-image-div,
+  .faq-wrapper {
+    width: 50%;
+  }
+
+
+  .box {
+    display: flex;
+    margin-top: 300px;
+    margin-right: 650px;
+    width: 90%;
+
+  }
+
+
+
 }
