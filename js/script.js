@@ -12,12 +12,12 @@ for (eachQAndA of qAndA) {
       answer.classList.remove("hide");
       question.style.fontWeight = "700";
       question.style.color = "#1D1E35";
-      arrow.classList.add("active");
+      arrow.style.transform = 'rotate(0deg)';
     } else {
       answer.classList.add("hide");
       question.style.fontWeight = "400";
       question.style.color = "#4A4B5E";
-      arrow.style.transform = "rotate(180deg)";
+      arrow.style.transform = 'rotate(180deg)';
     }
   });
 };
