@@ -2,7 +2,7 @@ body {
   font-size: .75em;
   font-family: "Kumbh Sans", sans-serif;
   background: linear-gradient(#AF67E9, #6565E7);
-  padding: 35px 10px 100px 10px;
+  padding: 35px 10px 200px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,15 +158,31 @@ p {
     width: 50%;
   }
 
-
-  .box {
-    display: flex;
-    margin-top: 300px;
-    margin-right: 650px;
-    width: 90%;
-
+  .mobile-img-div {
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: 0;
+    width: 80%;
+    height: 60%;
+    max-width: 1100px;
   }
 
 
+  .box {
+    display: flex;
+    margin-top: 325px;
+    margin-right: 650px;
+    width: 140px;
+  }
 
+}
+
+@media (min-width: 1200px) {
+
+  .desktop-image-div {
+    background-position-x: -75px;
+    background-position-y: 50px;
+    background-size: 450px;
+    height: 400px;
+  }
 }
