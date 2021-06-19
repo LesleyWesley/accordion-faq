@@ -7,7 +7,7 @@ for (eachQAndA of qAndA) {
   const answer = eachQAndA.querySelector(".answer");
   console.log(arrow);
 
-  questionDiv.addEventListener("click", function () {
+  question.addEventListener("click", function () {
     if (answer.classList.contains("hide")) {
       answer.classList.remove("hide");
       question.style.fontWeight = "700";
