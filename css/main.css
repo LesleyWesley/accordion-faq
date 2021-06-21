@@ -137,19 +137,28 @@ p {
 
   .card {
     width: 65%;
-    max-width: 800px;
+    max-width: 750px;
     justify-content: space-between;
     padding: 25px 40px 50px 0;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-position:left;
-    background-position-x: -320px;
+    background-position-x: -400px;
     background-size: 92%;
   }
 
   .desktop-image-div,
   .faq-wrapper {
     width: 50%;
+  }
+
+  .desktop {
+    display: flex;
+    width: 80%;
+    max-width: 925px;
+    justify-content: flex-start;
+    z-index: 2;
+    position: absolute;
   }
 
 
@@ -159,9 +168,8 @@ p {
     position: absolute;
     z-index: 2;
     display: flex;
+    width: 130px;
     margin-top: 26em;
-    margin-left: -30em;
-    width: 140px;
   }
 
 }
