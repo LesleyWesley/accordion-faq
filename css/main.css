@@ -11,6 +11,15 @@ body {
   height: 100%;
 }
 
+button {
+  border: none;
+  background: #FFF;
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1em;
+}
+
+
 main {
   display: flex;
   justify-content: center;
@@ -53,6 +62,7 @@ main {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  overflow: scroll;
 }
 
 .question-section {
@@ -114,6 +124,16 @@ p {
   display: none;
 }
 
+.question .active {
+  font-weight: 700;
+  color: #1D1E35;
+}
+
+.question i.active {
+  transform: rotate(0deg);
+  color: #F47C57;
+}
+
 /*===============================================
 
     TABLET STYLES
@@ -145,6 +165,11 @@ p {
     background-position:left;
     background-position-x: -400px;
     background-size: 92%;
+  }
+
+  .faq-wrapper {
+    max-height: 400px;
+    overflow: scroll;
   }
 
   .desktop-image-div,
